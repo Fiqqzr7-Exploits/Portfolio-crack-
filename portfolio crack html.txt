@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#02080f" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Tristan ✦ Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Baloo+2:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Lucide (nav, about, contact icons) -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- Font Awesome (programming language icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sections.css">
+</head>
+
+<body>
+
+    <!-- CANVAS OCEAN BG -->
+    <canvas id="ocean-canvas"></canvas>
+    <div id="cursor-container">
+        <div id="cursor-fish"></div>
+        <div id="cursor-ripple"></div>
+        <div id="cursor-ripple2"></div>
+    </div>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#" class="nav-logo">
+            tristan.dev
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about"><i data-lucide="user-round"></i> about</a></li>
+            <li><a href="#skills"><i data-lucide="code-2"></i> skills</a></li>
+            <li><a href="#projects"><i data-lucide="folder-open"></i> projects</a></li>
+            <li><a href="#contact"><i data-lucide="mail"></i> contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-left">
+            <div class="hero-greeting">
+                <i data-lucide="waves"></i> hey there, welcome!
+            </div>
+            <h1 class="hero-name">
+                i'm <span class="colored">Tristan</span><br>
+                <span class="pink">Aditya</span>
+            </h1>
+            <p class="hero-role">
+                <i data-lucide="graduation-cap"></i> Student &nbsp;·&nbsp;
+                <i data-lucide="terminal"></i> Developer &nbsp;·&nbsp;
+                <i data-lucide="anchor"></i> Ocean Enjoyer
+            </p>
+            <p class="hero-desc">
+                18 y/o self-taught dev from Indonesia,<br>
+                studying at SMK Boash 1. I build Discord bots,<br>
+                Roblox scripts, and cozy web things~
+            </p>
+            <div class="hero-badges">
+                <span class="badge"><i data-lucide="school"></i> SMK Boash 1</span>
+                <span class="badge"><i data-lucide="cake"></i> 18 y/o</span>
+                <span class="badge"><i data-lucide="map-pin"></i> Indonesia</span>
+            </div>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary"><i data-lucide="sparkles"></i> see my work</a>
+                <a href="#contact" class="btn-soft"><i data-lucide="message-circle"></i> say hello~</a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="avatar-blob">
+                <div class="avatar-glow"></div>
+                <div class="avatar-ring"></div>
+                <div class="avatar-circle">
+                    <img src="avatar.png" alt="Tristan" class="avatar-img" />
+                </div>
+                <div class="skill-pill"><span class="pill-dot" style="background:#00b2ff"></span><i class="fa-solid fa-moon fa-fw"></i> Lua / Luau</div>
+                <div class="skill-pill"><span class="pill-dot" style="background:#3572A5"></span><i class="fa-brands fa-python fa-fw"></i> Python</div>
+                <div class="skill-pill"><span class="pill-dot" style="background:#68a063"></span><i class="fa-brands fa-node-js fa-fw"></i> Node.js</div>
+                <div class="skill-pill"><span class="pill-dot" style="background:#2563eb"></span><i class="fa-solid fa-code fa-fw"></i> TypeScript</div>
+                <div class="skill-pill"><span class="pill-dot" style="background:#06b6d4"></span><i class="fa-solid fa-paintbrush fa-fw"></i> Tailwind</div>
+                <div class="skill-pill"><span class="pill-dot" style="background:#f34f29"></span><i class="fa-brands fa-github fa-fw"></i> GitHub</div>
+                <div class="skill-pill"><span class="pill-dot" style="background:#007acc"></span><i class="fa-solid fa-laptop-code fa-fw"></i> VS Code</div>
+                <div class="skill-pill"><span class="pill-dot" style="background:#888"></span><i class="fa-brands fa-php fa-fw"></i> Next / PHP</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="reveal">
+            <p class="section-eyebrow"><i data-lucide="fish"></i> about me</p>
+            <h2 class="section-title">just a chill dev<br>making things</h2>
+            <p class="section-sub">
+                I'm Muhammad Tristan Aditya, an 18-year-old developer
+                currently studying at SMK Boash 1. Self-taught, always
+                learning, and probably coding while listening to lo-fi
+                ocean sounds right now~
+            </p>
+            <div class="stat-bubbles">
+                <div class="stat-bubble"><span class="num">18</span><span class="lbl">years old</span></div>
+                <div class="stat-bubble"><span class="num">9+</span><span class="lbl">tech skills</span></div>
+                <div class="stat-bubble stat-bubble-alt"><span class="num">&#8734;</span><span class="lbl">lines written</span></div>
+            </div>
+            <div class="music-widget">
+                <div class="music-bars">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="music-info">
+                    <div class="song"><i data-lucide="music"></i> Ride The Wind — Cushy</div>
+                    <div class="artist">lo-fi ocean vibes</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-card reveal">
+            <div class="info-row"><span class="key"><i data-lucide="id-card"></i> Full Name</span><span class="val">Muhammad Tristan Aditya</span></div>
+            <div class="info-row"><span class="key"><i data-lucide="cake"></i> Age</span><span class="val">18 years old</span></div>
+            <div class="info-row"><span class="key"><i data-lucide="school"></i> School</span><span class="val">SMK Boash 1</span></div>
+            <div class="info-row"><span class="key"><i data-lucide="map-pin"></i> Location</span><span class="val">Indonesia</span></div>
+            <div class="info-row"><span class="key"><i data-lucide="briefcase"></i> Focus</span><span class="val">Bot · Web · Scripts</span></div>
+            <div class="info-row"><span class="key"><i data-lucide="waves"></i> Vibe</span><span class="val">chill & lo-fi</span></div>
+            <div class="info-row"><span class="key"><i data-lucide="circle-check"></i> Status</span><span class="val" style="color:var(--accent4)"><i data-lucide="circle-dot"></i> open to work</span></div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="reveal" style="text-align:center">
+            <p class="section-eyebrow" style="justify-content:center"><i data-lucide="wrench"></i> tech stack</p>
+            <h2 class="section-title">things i know~</h2>
+            <p class="section-sub">my lil toolkit of technologies</p>
+        </div>
+        <div class="skills-grid reveal">
+            <div class="skill-tile" style="--tile-color:#00b2ff">
+                <i class="fa-solid fa-moon tile-icon"></i>
+                <div class="tile-name">Lua / Luau</div>
+                <div class="tile-lvl">advanced</div>
+            </div>
+            <div class="skill-tile" style="--tile-color:#3572A5">
+                <i class="fa-brands fa-python tile-icon"></i>
+                <div class="tile-name">Python</div>
+                <div class="tile-lvl">intermediate</div>
+            </div>
+            <div class="skill-tile" style="--tile-color:#68a063">
+                <i class="fa-brands fa-node-js tile-icon"></i>
+                <div class="tile-name">Node.js</div>
+                <div class="tile-lvl">advanced</div>
+            </div>
+            <div class="skill-tile" style="--tile-color:#2563eb">
+                <i class="fa-brands fa-js tile-icon"></i>
+                <div class="tile-name">TypeScript</div>
+                <div class="tile-lvl">intermediate</div>
+            </div>
+            <div class="skill-tile" style="--tile-color:#06b6d4">
+                <i class="fa-solid fa-paintbrush tile-icon"></i>
+                <div class="tile-name">Tailwind CSS</div>
+                <div class="tile-lvl">advanced</div>
+            </div>
+            <div class="skill-tile" style="--tile-color:#e2e8f0">
+                <i class="fa-solid fa-n tile-icon"></i>
+                <div class="tile-name">Next.js</div>
+                <div class="tile-lvl">intermediate</div>
+            </div>
+            <div class="skill-tile" style="--tile-color:#8892BF">
+                <i class="fa-brands fa-php tile-icon"></i>
+                <div class="tile-name">PHP</div>
+                <div class="tile-lvl">intermediate</div>
+            </div>
+            <div class="skill-tile" style="--tile-color:#f34f29">
+                <i class="fa-brands fa-github tile-icon"></i>
+                <div class="tile-name">GitHub</div>
+                <div class="tile-lvl">daily use</div>
+            </div>
+            <div class="skill-tile" style="--tile-color:#007acc">
+                <i class="fa-solid fa-laptop-code tile-icon"></i>
+                <div class="tile-name">VS Code</div>
+                <div class="tile-lvl">daily use</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="reveal" style="text-align:center">
+            <p class="section-eyebrow" style="justify-content:center"><i data-lucide="folder-open"></i> projects</p>
+            <h2 class="section-title">stuff i've made~</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card reveal">
+                <i data-lucide="bot" class="project-icon"></i>
+                <div class="project-title">Vexora Discord Bot</div>
+                <p class="project-desc">Full Discord bot with premium key system, HWID locking, Supabase DB, and a sleek Components V2 panel.</p>
+                <div class="project-stack">
+                    <span class="stack-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                    <span class="stack-tag">Discord.js</span>
+                    <span class="stack-tag">Supabase</span>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <i data-lucide="gamepad-2" class="project-icon"></i>
+                <div class="project-title">Roblox Script System</div>
+                <p class="project-desc">Lua/Luau scripts with key verification, HWID locking, and modular loader architecture for executors.</p>
+                <div class="project-stack">
+                    <span class="stack-tag"><i class="fa-solid fa-moon"></i> Lua</span>
+                    <span class="stack-tag">Luau</span>
+                    <span class="stack-tag">Roblox</span>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <i data-lucide="waves" class="project-icon"></i>
+                <div class="project-title">This Portfolio~</div>
+                <p class="project-desc">A cozy ocean-themed portfolio with floating skill chips, smooth animations, and chill vibes only.</p>
+                <div class="project-stack">
+                    <span class="stack-tag">Next.js</span>
+                    <span class="stack-tag"><i class="fa-brands fa-php"></i> PHP</span>
+                    <span class="stack-tag">Tailwind</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="reveal">
+            <p class="section-eyebrow" style="justify-content:center"><i data-lucide="send"></i> contact</p>
+            <h2 class="section-title">let's chat~</h2>
+            <p class="section-sub">got a project or just wanna say hi? i don't bite</p>
+        </div>
+        <div class="contact-box reveal">
+            <i data-lucide="mail-plus" class="contact-fish-icon"></i>
+            <p class="section-sub">drop me a message anytime!</p>
+            <a href="/cdn-cgi/l/email-protection#a5d1d7ccd6d1c4cbc4c1ccd1dcc49496e5c2c8c4ccc98bc6cac8" class="contact-email"><span class="__cf_email__" data-cfemail="4337312a3037222d22272a373a22727003242e222a2f6d202c2e">[email&#160;protected]</span></a>
+            <div class="socials">
+                <a href="https://github.com/ethanxcode" class="social-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://discord.gg/dutacoding" class="social-btn"><i class="fa-brands fa-discord"></i> Discord</a>
+                <a href="https://www.instagram.com/_ilytan?igsh=a2F1cXFzdnlkNWdl&utm_source=qr" class="social-btn"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><i data-lucide="waves"></i> made by Tristan ~ 2026</p>
+        <p>SMK Boash 1 · Indonesia</p>
+    </footer>
+
+    <!-- Scripts: ocean first, then lucide, then reveal inline (no module needed) -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/ocean.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        // Init lucide icons
+        lucide.createIcons();
+
+        // Init scroll revea
